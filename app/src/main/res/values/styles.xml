@@ -1,0 +1,17 @@
+<resources>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:windowBackground">@color/colorAccent</item>
+    </style>
+
+    <style name="BaseTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="MainActionButtonStyle">
+
+    </style>
+</resources>

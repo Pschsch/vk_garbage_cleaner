@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:transitionName="@string/transition_name_background"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+    <View
+            android:id="@+id/auth_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:transitionName="@string/transition_name_background" />
+
+    <ImageView
+            android:id="@+id/vk_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:transitionName="@string/transition_name_logo"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/vk_logo_black" />
+
+    <com.google.android.material.card.MaterialCardView
+            android:id="@+id/auth_card_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            app:strokeColor="@color/colorAccent"
+            app:cardCornerRadius="8dp"
+            app:strokeWidth="1dp"
+            android:layout_marginRight="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/vk_logo">
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                    style="@style/BaseTextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:text="@string/auth_is_absent"
+                    android:textSize="17sp" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/auth_authorize_button"
+                    android:layout_marginLeft="16dp"
+                    android:padding="12dp"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/authorize" />
+
+            <com.google.android.material.button.MaterialButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/auth_no_i_wont_button"
+                    android:layout_marginLeft="16dp"
+                    app:backgroundTint="@color/colorWhite"
+                    app:rippleColor="@android:color/transparent"
+                    android:layout_marginRight="16dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="@string/no_i_wont"
+                    app:strokeColor="@color/colorAccent"
+                    app:strokeWidth="1dp"/>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

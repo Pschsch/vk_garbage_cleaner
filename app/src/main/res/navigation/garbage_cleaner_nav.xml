@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/garbage_cleaner_nav"
+        app:startDestination="@id/splashFragment">
+
+    <fragment
+            android:id="@+id/splashFragment"
+            android:name="com.pschsch.vkgarbagecleaner.ui.splash.SplashFragment"
+            android:label="SplashFragment" >
+        <action
+                android:id="@+id/action_splashFragment_to_authFragment"
+                app:destination="@id/authFragment" />
+        <action
+                android:id="@+id/action_splashFragment_to_mainFragment"
+                app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/authFragment"
+            android:name="com.pschsch.vkgarbagecleaner.ui.auth.AuthFragment"
+            android:label="AuthFragment" >
+        <action
+                android:id="@+id/action_authFragment_to_mainFragment"
+                app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.pschsch.vkgarbagecleaner.ui.main.MainFragment"
+            android:label="MainFragment" />
+</navigation>

@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Vk Garbage Cleaner</string>
+    <string name="auth_is_absent">Oops, it looks like you don\'t have authorization. Would you
+        like to authorize now?=)</string>
+    <string name="yes_of_course">Yes, of course</string>
+    <string name="no_i_wont">No, i won\'t. You\'ll send my data to rogues, uuugh</string>
+    <string name="welcome_to_vk_garbage_cleaner">Welcome to VK Garbage Cleaner</string>
+    <string name="authorize">Authorize</string>
+    <string name="authorize_error">VK authorization error. Can not continue</string>
+    <string name="unexpected_error">Unexpected error. Can not continue</string>
+    <string name="error_of_get_response">An error occurred while get response</string>
+
+    <string name="transition_name_logo" translatable="false">Logo transition</string>
+    <string name="transition_name_background" translatable="false">transition_name_background</string>
+    <string name="error_occurred_while_loading_data_please_check_internet_connection">Error occurred while loading data. Please, check internet connection</string>
+    <string name="repeat">Repeat</string>
+    <string name="are_you_sure_to_continue_garbage_clean">Are you sure, you want to continue?
+    You won\'t be able to restore data.</string>
+    <string name="no">No, i\'ve become cleverer</string>
+    <string name="start_garbage_clean">Start garbage clean</string>
+    <string name="views_count">Views: %1$s</string>
+    <string name="congratulations_you_don_t_have_garbage_in_your_videos">Congratulations! You don\'t have garbage in your videos!</string>
+    <string name="garbage_clean_started_wait_for_end_of_operation">Garbage clean started: wait for end of operation</string>
+
+    <!-- App ID-->
+    <integer name="com_vk_sdk_AppId">7126950</integer>
+</resources>
